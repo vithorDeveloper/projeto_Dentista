@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    font-family: 'Zen Loop', cursive;
+    background-color: rgb(249,248,249);
+}
+
+div.clear{
+    clear: both;
+}
+
+/* Estilizando o header */
+
+header{
+    width: 100%;
+    max-width: 1800px;
+}
+
+header img{
+    float: left;
+    padding: 30px 100px;
+}
+
+header nav.menu-mobile{
+    float: right;
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin: 30px 20px 0 0;
+    background-image: url("../imagens/menuzin.png");
+    background-size: 100% 100%;
+
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+
+header ul li{
+    float: left;
+    padding: 35px 20px;
+    list-style: none;
+}
+
+header ul a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:slategray;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* fim do header */
+
+/* ************************************************************************** */
+
+/* Estilização do mosaico */
+
+div.mosaico{
+    float: left;
+    width: calc(100% / 6);
+}
+
+div.img-mosaico{
+    background-color: slategray;
+    border: 5px solid white;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+/* fim do mosaico */
+
+/* ************************************************************************ */
+
+/* estilizacao quadros a frente do mosaico */
+
+section.container-quadro{
+    display: flex;
+    justify-content: center;
+}
+
+div.conteudo-quadro{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: -50px;
+
+}
+
+div.quadro:nth-of-type(1){
+    width: 30%;   
+    background-color: #576975;
+    padding:40px 10px;
+    color: azure;
+    background-image: url("../imagens/icone_dente.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position:  center calc(100% - 10px);
+}
+
+div.quadro:nth-of-type(2){
+    width: 40%;
+    background-color: #688293;
+    padding: 70px 10px;
+    color: azure;
+    border: 0.1px solid azure;
+}
+
+div.quadro:nth-of-type(3){
+    width: 30%;
+    background-color: #576975;
+    padding:40px 10px;
+    color: azure;
+    background-image: url("../imagens/icone_dente.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position:  center calc(100% - 10px);
+}
+
+div.quadro h3{
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+div.quadro p{
+    font-size: 20px;
+}
+
+/* fim estilizacao quadros */
+
+/* ********************************************************************** */
+
+/* estizando perfil profissional */
+
+section.container-perfil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+div.perfil{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    max-width: 800px;
+}
+
+div.texto-perfil{
+    width: 60%;
+    float: right;
+    padding: 20px 20px;
+}
+
+div.texto-perfil h2{
+    padding-bottom: 15px;
+}
+
+div.texto-perfil p{
+    font-size: 18px;
+}
+
+div.img-perfil{
+    width: 40%;
+    height: 500px;
+    float: left;
+    background-image: url("../imagens/img_perfil.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* fim estizacao perfil profissional */
+
+/* ************************************************************************ */
+
+/* estilizando sessão de videos */
+
+div.conteudo-videos{
+    width: 100%;  
+    padding: 40px 8%;
+    display: flex;
+    flex-direction: row;
+}
+
+div.videos{
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    width: 33.3%;
+    position: relative;
+}
+
+div.videos iframe{
+    width: 100%;
+    height: 200px;
+    position: static;
+}
+
+/* fim estilizacao videos */
+
+/* **************************************************************************** */
+
+/* estilizacao da sessao de tratamentos */
+
+div.conteudo-tratamento2{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+div.conteudo-tratamento{
+    padding: 60px 10%;
+}
+
+div.tratamento{
+    padding-top: 50px;
+}
+
+div.conteudo-tratamento h2{
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color:darkslategray;
+}
+
+div.tratamento h3{
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    color:darkslategray;
+}
+
+div.tratamento p{
+    text-align: justify;
+    padding: 0 40px;
+    color: black;
+    font-size: 20px;
+}
+
+
+/* fim estilizacao tratamentos */
+
+/* ***************************************************************************** */
+
+/* estilizando os depoimentos */
+
+section.container-depoimentos{
+    padding-top: 50px;
+    background-color: #dbdbdb;
+}
+
+section h2{
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color:darkslategray;
+}
+
+div.depoimentos{
+    text-align: center;
+    padding: 40px 0;
+    color: black;
+}
+
+div.depoimentos p{
+    margin: 0 auto;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+div.pessoa-dep{
+    padding-top: 10px;
+}
+
+div span{
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 10px;
+}
+
+div.pessoa-dep img{
+    border-radius: 50%;
+}
+
+/* fim dos depoimentos */
+
+/* ******************************************************************************* */
+
+/* estilizando as redes sociais */
+  
+section.container-insta{
+    background-color: #98a5ae;
+}
+
+div.insta{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+div.insta p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+div.container-mosaico2{
+    width: 100%;
+    float: left;
+}
+
+div.img-mosaico2{
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    float: left;
+    border: 5px solid azure;
+    background-color: silver;
+}
+
+div.face{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #576975;
+}
+
+div.face p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+/* fim das redes sociais */
+
+/* ********************************************************************************* */
+
+/* estilizando o contato */
+
+section.container-contato{
+    padding-bottom: 50px;
+}
+
+form{
+    padding: 40px 40px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+section h2{
+    padding-top: 70px;
+}
+
+div.contato input[type=text]{
+   width: 100%;
+   height: 45px;
+   padding: 15px 10px;
+}
+
+div.contato input[type=text]:focus{
+    outline: none;
+    border: 0.5px solid blue;
+ }
+
+div.contato{
+    float: left;
+    padding: 10px 10px;
+}
+
+div.w100{
+    width: 100%;
+}
+
+div.w50{
+    width: 50%;
+}
+
+div.contato p{
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+textarea{
+    width: 100%;
+    height: 140px;
+    resize: none;
+    padding: 10px 10px;
+}
+
+textarea:focus{
+    outline: none;
+    border: 0.5px solid blue;
+}
+
+/* fim do contato */
+
+/* istilizacao do footer */
+footer{
+    padding-top: 50px;
+}
+
+div.rodape{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 30px 5%;
+    background-color: #98a5ae;
+}
+
+div.rodape p{
+  line-height: 23px;
+  font-weight: 600;
+  color: #576975;
+}
+
+/* fim do footer */
+
+/* ******************************************************************************* */
+
+/* medias queries */
+
+@media screen and (max-width: 1200px){
+    div.img-mosaico2{
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    div.mosaico2 > div:nth-of-type(1n+7){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px){
+    div.conteudo-quadro{
+        flex-direction: column;
+    }
+
+    div.quadro:nth-of-type(1){
+        width: 75%; 
+    }
+    
+    div.quadro:nth-of-type(2){
+        width: 90%;
+    }
+    
+    div.quadro:nth-of-type(3){
+        width: 75%;
+    }
+
+    div.perfil{
+        flex-direction: column;
+    }
+
+    div.img-perfil{
+       width: 70%;
+       height: 700px;
+    }
+
+    header img{
+        float: left;
+        padding: 28px 20px;
+    }
+
+    header nav.menu-desktop{
+        display: none;
+    }
+
+    header nav.menu-mobile{
+        display: block;
+    }
+
+    header ul{
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background-color:silver;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    header ul a{
+        text-transform: uppercase;
+        color:slategray;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    header ul li{
+        float: none;
+        padding: 15px 20px;
+        list-style: none;
+    }
+
+    div.conteudo-videos{
+        width: 100%;  
+        padding: 40px 8%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    div.videos{
+        border-top: 5px solid white;
+        border-bottom: 5px solid white;
+        width: 100%;
+    }
+    
+    div.videos iframe{
+        width: 90%;
+        height: 300px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    div.mosaico2{
+        display: none;
+    }
+
+    div.w50{
+        width: 100%;
+    }
+
+    div.rodape{
+        text-align: center;
+        flex-direction: column;
+    }
+    
+    div.rodape .pad{
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    div.img-perfil{
+        width: 70%;
+        height: 500px;
+    }
+}
